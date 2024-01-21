@@ -7,7 +7,7 @@ Primeiro, é necessário fazer o download do repositório. Isso deve ser feito n
 
 1. Baixando o repositório:
     - com o comando `git clone https://github.com/VictorVGomes/futebol_stats.git` (caso você tenha o git bash instalado)
-    - clicando em <span style="background-color: green;">**<> code**</span> e depois em Download ZIP
+    - clicando em $\colorbox{green}{\textbf{<> code}}$ e depois em Download ZIP
 
 2. Acessando o repositório
     - Se você baixou via git clone, basta acessar o repositório local de nome "futebol_stats"
@@ -77,15 +77,15 @@ A base de dados usada neste app foi adquirida no site **basedosdados.org** (disp
 
 As colunas disponíveis são:
 <> code
-- <span style="background-color: green;">**ano_campeonato**</span> : int64 
+- $\colorbox{green}{\textbf{ano\_campeonato}}$ : int64 
 - data : object
 - rodada : int64
 - estadio : object
 - arbitro : object
 - publico : float64
 - publico_max : float64
-- <span style="background-color: green;">**time_mandante**</span> : object
-- <span style="background-color: green;">**time_visitante**</span> : object
+- $\colorbox{green}{\textbf{time\_mandante}}$ : object
+- $\colorbox{green}{\textbf{time\_visitante}}$ : object
 - tecnico_mandante : object
 - tecnico_visitante : object
 - colocacao_mandante : float64
@@ -94,23 +94,23 @@ As colunas disponíveis são:
 - valor_equipe_titular_visitante : float64
 - idade_media_titular_mandante : float64
 - idade_media_titular_visitante : float64
-- <span style="background-color: green;">**gols_mandante**</span> : float64
-- <span style="background-color: green;">**gols_visitante**</span> : float64
+- $\colorbox{green}{\textbf{gols\_mandante}}$ : float64
+- $\colorbox{green}{\textbf{gols\_visitante}}$ : float64
 - gols_1_tempo_mandante : float64
 - gols_1_tempo_visitante : float64
-- <span style="background-color: blue;">**escanteios_mandante** : float64
-- <span style="background-color: blue;">**escanteios_visitante** : float64
-- <span style="background-color: blue;">**faltas_mandante** : float64
-- <span style="background-color: blue;">**faltas_visitante** : float64
-- <span style="background-color: blue;">**chutes_bola_parada_mandante**</span> : float64
-- <span style="background-color: blue;">**chutes_bola_parada_visitante**</span> : float64
-- <span style="background-color: blue;">**defesas_mandante**</span> : float64
-- <span style="background-color: blue;">**defesas_visitante**</span> : float64
-- <span style="background-color: blue;">**impedimentos_mandante**</span> : float64
-- <span style="background-color: blue;">**impedimentos_visitante**</span> : float64
-- <span style="background-color: blue;">**chutes_mandante**</span> : float64
-- <span style="background-color: blue;">**chutes_visitante**</span> : float64
-- <span style="background-color: blue;">**chutes_fora_mandante**</span> : float64
-- <span style="background-color: blue;">**chutes_fora_visitante**</span> : float64
+- $\colorbox{blue}{\textbf{escanteios\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{escanteios\_visitante}}$ : float64
+- $\colorbox{blue}{\textbf{faltas\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{faltas\_visitante}}$ : float64
+- $\colorbox{blue}{\textbf{chutes\_bola\_parada\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{chutes\_bola\_parada\_visitante}}$ : float64
+- $\colorbox{blue}{\textbf{defesas\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{defesas\_visitante}}$ : float64
+- $\colorbox{blue}{\textbf{impedimentos\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{impedimentos\_visitante}}$ : float64
+- $\colorbox{blue}{\textbf{chutes\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{chutes\_visitante}}$ : float64
+- $\colorbox{blue}{\textbf{chutes\_fora\_mandante}}$ : float64
+- $\colorbox{blue}{\textbf{chutes\_fora\_visitante}}$ : float64
 
 Muitas delas contém valores nulos, e algumas são imprescindíveis para as análises feitas neste aplicativo. Outras variáveis podem ser adicionadas sem causar problemas no funcionamento do app. Algumas, no entanto, não estarão disponíveis para todas as análises desejadas. As variáveis básicas e necessárias para o app estão coloridas com fundo verde. As variáveis importantes, mas não necessárias, estão em azul.
