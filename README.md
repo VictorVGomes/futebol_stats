@@ -1,11 +1,13 @@
 # futebol_stats
 Um app simples para leitura e visualização de estatísticas básicas sobre futebol, com foco na performance dos times.
 
-## Rodando o app
+## Requerimentos básicos
 
-* Este app precisa de Python versão 10.13 ou maior e o gerenciador de arquivos Conda ([Baixe aqui](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe) o miniconda). No menu de instalação, selecione todas as caixas, assim como indicado na imagem abaixo.
+* Este app precisa de Python versão 10.13 ou maior e o gerenciador de arquivos Conda ([Baixe aqui](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe) - miniconda). No menu de instalação, selecione todas as caixas, assim como indicado na imagem abaixo:
 
 ![Exemplo - miniconda](images/miniconda_example.png)
+
+## Rodando o app
 
 Primeiro, é necessário fazer o download do repositório. Isso deve ser feito nesta página do github. Existem duas formas mais simples:
 
