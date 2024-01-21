@@ -1,8 +1,0 @@
-# conda environments:
-#
-base                     C:\Users\vitin\anaconda3
-consult_env              C:\Users\vitin\anaconda3\envs\consult_env
-futebolstats             C:\Users\vitin\anaconda3\envs\futebolstats
-teste                    C:\Users\vitin\anaconda3\envs\teste
-torch_stuff              C:\Users\vitin\anaconda3\envs\torch_stuff
-
