@@ -6,7 +6,6 @@ import plotly.express as px
 
 st.set_page_config(layout="wide", page_title="futstats")
 
-
 from src.stats.stats import *
 from src.utils.futils import *
 from src.utils.useful_strings import *
