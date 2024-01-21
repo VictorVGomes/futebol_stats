@@ -163,4 +163,4 @@ cython_debug/
 .vscode/
 
 # other stuff
-checks/output/*
+checks/output/available_envs.txt
