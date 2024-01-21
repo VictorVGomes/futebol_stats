@@ -113,4 +113,4 @@ As colunas disponíveis são:
 - *chutes_fora_mandante* : float64 **
 - *chutes_fora_visitante* : float64 **
 
-Muitas delas contém valores nulos, e algumas são imprescindíveis para as análises feitas neste aplicativo. Outras variáveis podem ser adicionadas sem causar problemas no funcionamento do app. Algumas, no entanto, não estarão disponíveis para todas as análises desejadas. As variáveis básicas e necessárias para o app estão em negrito e com um único asterisco (*). As variáveis importantes, mas não necessárias, estão em itálico, com 2 asteriscos (**).
+Muitas delas contém valores nulos, e algumas são imprescindíveis para as análises feitas neste aplicativo. Outras variáveis podem ser adicionadas sem causar problemas no funcionamento do app. Algumas, no entanto, não estarão disponíveis para todas as análises desejadas. As variáveis básicas e necessárias para o app estão em negrito e com um único asterisco (*). As variáveis importantes, mas não necessárias, estão em itálico, com 2 asteriscos (**). As outras variáveis não são necessárias, mas podem trazer informações importantes ao usuário.
