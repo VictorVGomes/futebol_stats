@@ -2,8 +2,8 @@ useful_strings = dict(
     tabs_names=[
         "Início",
         "Estatísticas gerais",
-        "Estatísticas por time (Mandante ou Visitante)",
-        "Estatísticas por time (Mandante ou Visitante) - gráficos",
+        "Estatísticas por time (Em casa (mandante)/Fora (Visitante)/Ambos)",
+        "Estatísticas por time (Em casa (mandante)/Fora (Visitante)/Ambos) - gráficos",
         "Time A vs Time B",
     ],
     futstatsInfo="""
@@ -27,7 +27,16 @@ Caso as 3 opções sejam indicadas ao mesmo tempo, a ordem de uso será como a n
 
 columns_to_keep = [""]
 
-descriptive_cols = ["# de jogos", "Média", "Desvio-padrão", "Mín.", "25%", "50% (Mediana)", "75%", "Máx."]
+descriptive_cols = [
+    "# de jogos",
+    "Média",
+    "Desvio-padrão",
+    "Mín.",
+    "25%",
+    "50% (Mediana)",
+    "75%",
+    "Máx.",
+]
 team_specific_grouping_variables = [
     "ano_campeonato",
     "estadio",

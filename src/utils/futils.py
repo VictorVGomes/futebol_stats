@@ -26,7 +26,11 @@ def fname_to_csvname(filename: str) -> str:
     Returns:
         str: corrected filename
     """
-    filename = f"{filename.split('.')[0]}.csv" if not filename.endswith(".csv") else filename
+    filename = (
+        f"{filename.split('.')[0]}.csv"
+        if not filename.endswith(".csv")
+        else filename
+    )
     return filename
 
 
