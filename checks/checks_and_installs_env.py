@@ -61,6 +61,6 @@ else:
     conda_env_create()
 
     n = 0
-    while not (env_exists := make_new_check()) or n < 5:
+    while ((not (env_exists := make_new_check())) and (n < 5)):
         n += 1
         conda_env_create()
