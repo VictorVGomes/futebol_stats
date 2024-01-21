@@ -2,6 +2,12 @@ import os
 import re
 ENV_NAME = 'futebolstats'
 
+def conda_env_list():
+    os.system('CALL conda env list > checks/output/available_envs.txt')
+
+def conda_env_create():
+    os.system(f'CALL conda create --name {ENV_NAME} --file requirements/requirements.txt')
+
 def check_if_env_exists(env_name: str) -> bool:
     with open('checks/output/available_envs.txt', 'r') as f:
         text = f.readlines()
@@ -15,14 +21,12 @@ def check_if_env_exists(env_name: str) -> bool:
 
     return env_exists
 
-env_exists = check_if_env_exists(ENV_NAME)
-
 def run_system_command_n_times(command: str, n: int) -> None:
     for _ in range(n):
         os.system(command=command)
 
 def make_new_check():
-    os.system('CALL conda env list > checks/output/available_envs.txt')
+    conda_env_list()
     env_exists = check_if_env_exists(ENV_NAME)
     if not env_exists:
         os.system('ECHO Problema ao criar o ambiente. Tentando novamente...')
@@ -35,6 +39,10 @@ def make_new_check():
              )
         )
     return env_exists
+
+
+
+env_exists = check_if_env_exists(ENV_NAME)
 
 if env_exists:
     text_ = (
@@ -50,9 +58,9 @@ if env_exists:
 
 else:
     os.system('ECHO criando o ambiente python...')
-    os.system(f'CALL conda create --name {ENV_NAME} --file requirements.txt')
+    conda_env_create()
 
     n = 0
     while not (env_exists := make_new_check()) or n < 5:
         n += 1
-        os.system(f'CALL conda create --name {ENV_NAME} --file requirements.txt')
+        conda_env_create()
