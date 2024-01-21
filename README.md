@@ -3,6 +3,8 @@ Um app simples para leitura e visualização de estatísticas básicas sobre fut
 
 ## Rodando o app
 
+* Este app precisa de Python versão 10.13 ou maior ([Baixe aqui](https://www.python.org/downloads/)) e o gerenciador de arquivos Conda ([Baixe aqui](https://www.anaconda.com/download/)).
+
 Primeiro, é necessário fazer o download do repositório. Isso deve ser feito nesta página do github. Existem duas formas mais simples:
 
 1. Baixando o repositório
