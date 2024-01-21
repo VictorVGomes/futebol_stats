@@ -6,7 +6,7 @@ def conda_env_list():
     os.system('CALL conda env list > checks/output/available_envs.txt')
 
 def conda_env_create():
-    os.system(f'CALL conda create --name {ENV_NAME} --file requirements/requirements.txt')
+    os.system(f'CALL conda create --name {ENV_NAME} python=3.10 --file requirements/requirements.txt')
 
 def check_if_env_exists(env_name: str) -> bool:
     with open('checks/output/available_envs.txt', 'r') as f:
