@@ -493,20 +493,20 @@ if df is not None:
             with t4c2r1:
                 st.markdown(f"#### Num total de {nJogos} jogos:")
                 st.markdown(
-                    f"###### a/o :green[{st.session_state.time_A} venceu {(A_venceu := len(time_A_venceu))}] ({(A_venceu / nJogos * 100):.2f}%) jogos do/a {st.session_state.time_B}"
+                    f"###### a/o :green[{st.session_state.time_A} venceu {(A_venceu := len(time_A_venceu))}] ({(A_venceu / nJogos * 100 if nJogos > 0 else 0):.2f}%) jogos do/a {st.session_state.time_B}"
                 )
                 st.markdown(
-                    f"###### a/o :green[{st.session_state.time_B} venceu {(B_venceu := len(time_B_venceu))}] ({(B_venceu / nJogos * 100):.2f}%) jogos do/a {st.session_state.time_A}"
+                    f"###### a/o :green[{st.session_state.time_B} venceu {(B_venceu := len(time_B_venceu))}] ({(B_venceu / nJogos * 100 if nJogos > 0 else 0):.2f}%) jogos do/a {st.session_state.time_A}"
                 )
                 st.markdown(
-                    f"""###### :blue[{(empates_AB := nJogos - (A_venceu + B_venceu))} empate{'s ocorreram' if empates_AB!=1 else ' ocorreu'} ({(empates_AB / nJogos * 100):.2f}%) no período selecionado.]"""
+                    f"""###### :blue[{(empates_AB := nJogos - (A_venceu + B_venceu))} empate{'s ocorreram' if empates_AB!=1 else ' ocorreu'} ({(empates_AB / nJogos * 100 if nJogos > 0 else 0):.2f}%) no período selecionado.]"""
                 )
                 st.markdown(
-                    f"""###### O {st.session_state.time_A} marcou {gols_A_total} gols contra o {st.session_state.time_B}, sendo {gols_time_A_visit} ({(gols_time_A_visit / gols_A_total * 100):.2f}%) deles fora de casa e {gols_time_A_mand} ({(gols_time_A_mand / gols_A_total * 100):.2f}%) em casa."""
+                    f"""###### O {st.session_state.time_A} marcou {gols_A_total} gols contra o {st.session_state.time_B}, sendo {gols_time_A_visit} ({(gols_time_A_visit / gols_A_total * 100 if nJogos > 0 else 0):.2f}%) deles fora de casa e {gols_time_A_mand} ({(gols_time_A_mand / gols_A_total * 100 if gols_A_total > 0 else 0):.2f}%) em casa."""
                 )
 
                 st.markdown(
-                    f"""###### O {st.session_state.time_B} marcou {gols_B_total} gols contra o {st.session_state.time_A}, sendo {gols_time_B_visit} ({(gols_time_B_visit / gols_B_total * 100):.2f}%) deles fora de casa e {gols_time_B_mand} ({(gols_time_B_mand / gols_B_total * 100):.2f}%) em casa."""
+                    f"""###### O {st.session_state.time_B} marcou {gols_B_total} gols contra o {st.session_state.time_A}, sendo {gols_time_B_visit} ({(gols_time_B_visit / gols_B_total * 100 if nJogos > 0 else 0):.2f}%) deles fora de casa e {gols_time_B_mand} ({(gols_time_B_mand / gols_B_total * 100 if gols_B_total > 0 else 0):.2f}%) em casa."""
                 )
 
         st.divider()
