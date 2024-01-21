@@ -3,7 +3,7 @@ Um app simples para leitura e visualização de estatísticas básicas sobre fut
 
 ## Rodando o app
 
-Primeiro, é necessário fazer o download do repositório. Isso deve ser feito nesta página do github.
+Primeiro, é necessário fazer o download do repositório. Isso deve ser feito nesta página do github. Existem duas formas mais simples:
 
 1. Baixando o repositório:
     - com o comando `git clone https://github.com/VictorVGomes/futebol_stats.git` (caso você tenha o git bash instalado)
@@ -14,7 +14,7 @@ Primeiro, é necessário fazer o download do repositório. Isso deve ser feito n
     - se você baixou o .zip, extraia o repositório usando algum extrator de arquivos do tipo .zip em uma pasta e acesse o conteúdo
 
 3. Rodando o app
-    - dentro do repositório local, clique no arquivo install.cmd
+    - dentro do repositório local, clique no arquivo install.cmd (é possível que o computador avise sobre a possibilidade de ser um vírus, clique em mais informações e rode mesmo assim)
     - verifique que tudo ocorreu como o esperado no prompt de comando que foi aberto
     - agora, basta clicar em "run.cmd" para rodar o app
 
