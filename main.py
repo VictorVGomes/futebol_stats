@@ -15,6 +15,12 @@ tabs_names = useful_strings["tabs_names"]
 tabs = st.tabs(tabs_names)
 df = None
 
+if "usar_todos_os_anos" not in st.session_state:
+    st.session_state.usar_todos_os_anos = True
+
+if "usar_todos_os_anos_tab4" not in st.session_state:
+    st.session_state.usar_todos_os_anos_tab4 = True
+
 with tabs[0]:
     left_column_tab0, right_column_tab0 = st.columns(2)
 
@@ -148,9 +154,6 @@ if df is not None:
                 horizontal=True,
                 key="tab2",
             )
-
-            if "usar_todos_os_anos" not in st.session_state:
-                st.session_state.usar_todos_os_anos = True
 
             anos_filtro = st.multiselect(
                 "Juntar estatísticas sobre jogos nos anos:",
@@ -409,9 +412,6 @@ if df is not None:
                     index=3,
                 )
             with t4c1r1:
-                if "usar_todos_os_anos_tab4" not in st.session_state:
-                    st.session_state.usar_todos_os_anos_tab4 = True
-
                 anos_filtro_tab4 = st.multiselect(
                     "Juntar estatísticas sobre jogos nos anos:",
                     df["ano_campeonato"].unique().tolist(),

@@ -1,9 +1,11 @@
 # futebol_stats
-Um app simples para leitura e visualização de estatísticas básicas sobre futebol, com foco em  times individuais
+Um app simples para leitura e visualização de estatísticas básicas sobre futebol, com foco na performance dos times.
 
 ## Rodando o app
 
-* Este app precisa de Python versão 10.13 ou maior ([Baixe aqui](https://www.python.org/downloads/)) e o gerenciador de arquivos Conda ([Baixe aqui](https://www.anaconda.com/download/)).
+* Este app precisa de Python versão 10.13 ou maior e o gerenciador de arquivos Conda ([Baixe aqui](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe) o miniconda). No menu de instalação, selecione todas as caixas, assim como indicado na imagem abaixo.
+
+![Exemplo - miniconda](images/miniconda_example.png)
 
 Primeiro, é necessário fazer o download do repositório. Isso deve ser feito nesta página do github. Existem duas formas mais simples:
 
@@ -16,9 +18,13 @@ Primeiro, é necessário fazer o download do repositório. Isso deve ser feito n
     - se você baixou o .zip, extraia o repositório usando algum extrator de arquivos do tipo .zip em uma pasta e acesse o conteúdo
 
 3. Rodando o app
+    - *QUANDO RODANDO ALGUNS DOS SCRIPTS ABAIXO, É POSSÍVEL QUE O COMPUTADOR INDIQUE A POSSIBILIDADE DE ELES SEREM UM VÍRUS: NESTA ABA, CLIQUE EM `MAIS INFORMAÇÕES` E SELECIONE A OPÇÃO `EXECUTAR MESMO ASSIM` (OU ALGO PARECIDO)*
     - dentro do repositório local, clique no arquivo install.cmd (é possível que o computador avise sobre a possibilidade de ser um vírus, clique em mais informações e rode mesmo assim)
+        - é possível que, nesta parte, apareçam algumas mensagens pedindo que você confirme as operações: basta escrever "y" e apertar enter nesses momentos
+
     - verifique que tudo ocorreu como o esperado no prompt de comando que foi aberto
     - agora, basta clicar em "run.cmd" para rodar o app
+        - o ```streamlit```, biblioteca usada como base para o app, pede um e-mail de acesso no primeiro uso: basta deixá-lo em branco e apertar enter. Logo após isso, o app deve abrir normalmente. 
 
 ## Mais detalhes
 
