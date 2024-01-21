@@ -40,8 +40,8 @@ def make_new_check():
         )
     return env_exists
 
-
-
+# first round
+conda_env_list()
 env_exists = check_if_env_exists(ENV_NAME)
 
 if env_exists:
